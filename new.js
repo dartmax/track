@@ -1,6 +1,6 @@
 const editMap = (arr) => {
 
-return arr.reduce(function(prev, curr, index, arr) {
+return arr.reduce(function(prev, curr) {
   const states = [...prev.tracks.get(), ...curr.tracks.get()];
   const carriers = [prev.name, curr.name];
   const next_tracking_ids = [prev.next_tracking_ids, curr.next_tracking_ids];
