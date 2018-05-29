@@ -8,7 +8,7 @@ const editMap = (arr) => {
   const weight = {};
   const destination = {};
 
-  arr.map((i, el) => {
+  arr.forEach((i, el) => {
     states.push(...i.tracks.get());
     carriers.push(i.name);
     next_tracking_ids.push(i.next_tracking_ids);
